@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0; /* Light gray background for contrast */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #4a90e2; /* Blue color for calculator background */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background for display */
+    color: #000; /* Black text color for display */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Inner shadow for display */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px); /* 4 buttons per row */
+    gap: 10px; /* Spacing between buttons */
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px; /* Rounded corners for buttons */
+    cursor: pointer;
+    background-color: #337ab7; /* Blue button color */
+    color: white; /* White text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for button depth */
+}
+
+button:hover {
+    background-color: #286090; /* Darker blue on hover */
+}
+
